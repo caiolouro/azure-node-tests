@@ -29,6 +29,8 @@ server.listen(port);
 
 if(_.isString('teste')) console.log('lodash testing');
 
+console.log('mongoose.Types.ObjectId', mongoose.Types.ObjectId().toString());
+
 async.auto({
     teste: function (callback) {
         console.log('funcao teste dentro do async');
