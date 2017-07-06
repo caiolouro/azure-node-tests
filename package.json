@@ -1,0 +1,22 @@
+{
+  "name": "azure-node-tests",
+  "version": "1.0.0",
+  "description": "Node.js Azure apps testing procedures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiolouro/azure-node-tests.git"
+  },
+  "author": "Caio Louro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caiolouro/azure-node-tests/issues"
+  },
+  "homepage": "https://github.com/caiolouro/azure-node-tests#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
