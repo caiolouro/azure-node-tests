@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/caiolouro/azure-node-tests#readme",
   "dependencies": {
+    "async": "^1.5.2",
     "express": "^4.15.3",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "mongoose": "^4.11.1"
   },
   "engines": {
     "node": "6.10.0"

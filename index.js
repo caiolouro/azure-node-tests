@@ -11,6 +11,8 @@
 
 var http = require('http');
 var _ = require('lodash');
+var async = require('async');
+var mongoose = require('mongoose');
 
 var server = http.createServer(function (request, response) {
 
@@ -26,5 +28,12 @@ var port = process.env.PORT || 8080;
 server.listen(port);
 
 if(_.isString('teste')) console.log('lodash testing');
+
+async.auto({
+    teste: function (callback) {
+        console.log('funcao teste dentro do async');
+        return callback();
+    }
+});
 
 console.log("Server running at http://localhost:", port);
