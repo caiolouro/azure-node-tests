@@ -10,6 +10,7 @@
 // });
 
 var http = require('http');
+var _ = require('lodash');
 
 var server = http.createServer(function (request, response) {
 
@@ -20,9 +21,10 @@ var server = http.createServer(function (request, response) {
 
 });
 
-console.log('process.env.OPENSHIFT_NODEJS_PORT', process.env.OPENSHIFT_NODEJS_PORT);
 console.log('process.env.PORT', process.env.PORT);
 var port = process.env.PORT || 8080;
 server.listen(port);
+
+if(_.isString('teste')) console.log('lodash testing');
 
 console.log("Server running at http://localhost:", port);
