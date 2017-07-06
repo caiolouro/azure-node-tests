@@ -27,6 +27,8 @@ console.log('process.env.PORT', process.env.PORT);
 var port = process.env.PORT || 8080;
 server.listen(port);
 
+console.log('process.env.NODE_ENV', process.env.NODE_ENV);
+
 if(_.isString('teste')) console.log('lodash testing');
 
 console.log('mongoose.Types.ObjectId', mongoose.Types.ObjectId().toString());
