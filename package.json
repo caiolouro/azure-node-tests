@@ -19,5 +19,8 @@
   "homepage": "https://github.com/caiolouro/azure-node-tests#readme",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "engines": {
+    "node": "6.11.0"
   }
 }
